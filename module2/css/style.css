@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(202, 245, 245);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid greenyellow;
+    width: 90%;
+    color: white;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    background-color: rgb(65, 7, 119);
+    font-size: 2.5em;
+}
+
+.heading
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    color: rgb(209, 162, 162);
+    width: 90%;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkblue;
+    border: 3px solid darkblue;
+    border-radius: 8px;
+}
+
+.content
+{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container
+{
+    background-color: rgb(153, 153, 252);
+    color: rgb(66, 66, 38);
+    width: 90%;
+    border: 3px solid black;
+    padding: 1%;
+    margin: 1% auto;
+    border-radius: 5px;
+}
+
+@media (min-width: 992px){
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5{
+        float: left;
+        border: none;
+        /* border: 1px solid red; */
+    } 
+
+    .col-lg-4{
+        margin: 0px;
+        width: 33%;
+        padding: 2%;
+        text-align: justify;
+        height: 50%;
+    }
+
+    .heading{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .col-lg-3, .col-lg-6
+    {
+        float: left;
+        border: none;
+    }
+
+    .col-lg-6{
+        width: 50%;
+        padding: 2%;
+        text-align: justify;
+        height: 50%;
+    }
+
+    .thirdDiv{
+        width: 100%;
+    }
+
+    .heading{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .col-lg-12{
+        border: none;
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .heading{
+        width: 100%;
+        text-align: center;
+    }
+}
